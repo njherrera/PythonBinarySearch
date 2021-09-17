@@ -18,13 +18,3 @@ def binarySearch ( list, target):
     elif target > list[mid]: # if target is greater than the middle value of the list, it must be right of middle
         leftPoint = (mid) + 1 # set new left side to be one right of the middle value
         binarySearch(list[leftPoint:], target) # call the method again, this time with the new left and right sides
-
-testList = []
-testList.append(1)
-testList.append(2)
-testList.append(3)
-testList.append(4)
-testList.append(5)
-testList.append(6)
-testList.append(7)
-binarySearch(testList, 8)
